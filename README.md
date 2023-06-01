@@ -1,5 +1,6 @@
 # musl-compat
-Legacy compatibility headers for the musl libc.
+
+Legacy compatibility headers for the musl C library.
 
 ## Build and install
 
