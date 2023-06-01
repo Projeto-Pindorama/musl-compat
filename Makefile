@@ -32,6 +32,9 @@ install-sysheaders: src/cdefs.h src/queue.h src/tree.h
 	for sys_header in src/cdefs.h src/queue.h src/tree.h; do \
 		$(INSTALL) -c -m 644 $$sys_header $(ROOT)$(SYSINCLUDE_DIR) ; \
 	done
+	for manual in ./man/queue.3 ./man/tree.3; do \
+		$(INSTALL) -c -m 644 $$manual  $(ROOT)$(MANDIR)/man3/ ; \
+	done
 
 install-headers: src/error.h
 	for header in src/error.h; do \
